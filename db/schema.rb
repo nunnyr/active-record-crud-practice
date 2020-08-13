@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_13_151006) do
+ActiveRecord::Schema.define(version: 2020_08_13_153652) do
 
   create_table "people", force: :cascade do |t|
     t.string "name"
-    t.boolean "likes_plants"
+    t.string "free_time"
+    t.integer "age"
   end
 
   create_table "plants", force: :cascade do |t|
